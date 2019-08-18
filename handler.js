@@ -1,3 +1,5 @@
+import getHandler from './src/get.js';
+
 export const hello = async (event, context) => {
   return {
     statusCode: 200,
@@ -6,6 +8,8 @@ export const hello = async (event, context) => {
     }),
   };
 };
+
+export const get = getHandler;
 
 const message = ({ time, ...rest }) => new Promise((resolve, reject) =>
   setTimeout(() => {
