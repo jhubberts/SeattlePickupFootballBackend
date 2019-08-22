@@ -2,7 +2,6 @@ import * as ResponseUtils from './utils/response-utils';
 import * as UserUtils from './utils/user-utils';
 import * as DateUtils from './utils/date-utils';
 import * as DAL from './dal';
-
 const rsvpHandler = async (event, context) => {
     try {
         return ResponseUtils.buildResponse(200, await rsvp(event));
