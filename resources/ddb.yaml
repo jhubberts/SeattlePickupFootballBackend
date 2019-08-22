@@ -1,0 +1,13 @@
+Resources:
+  GamesTable:
+    Type: 'AWS::DynamoDB::Table'
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: 'gameDay'
+          AttributeType: 'S'
+      BillingMode: 'PAY_PER_REQUEST'
+      KeySchema:
+        # Nearest Saturday
+        - AttributeName: 'gameDay'
+          KeyType: 'HASH'
+      TableName: 'Games'

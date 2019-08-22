@@ -33,3 +33,4 @@ functions:
 
 resources:
   - ${file(resources/api-gateway-errors.yaml)}
+  - ${file(resources/ddb.yaml)}
