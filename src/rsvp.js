@@ -1,4 +1,5 @@
 import * as ResponseUtils from './utils/response-utils';
+import * as UserUtils from './utils/user-utils';
 
 const rsvpHandler = async (event, context) => {
     try {
@@ -9,7 +10,8 @@ const rsvpHandler = async (event, context) => {
 };
 
 const rsvp = async (event) => {
-    console.log(event);
+    const userData = await UserUtils.userDataForEvent(event);
+    console.log(userData);
 };
 
 export default rsvpHandler;

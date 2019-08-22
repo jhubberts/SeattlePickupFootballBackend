@@ -31,7 +31,10 @@ provider:
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
       Resource: "arn:aws:dynamodb:us-west-2:*:*"
-
+    - Effect: Allow
+      Action:
+        - cognito-idp:AdminGetUser
+      Resource: "arn:*:cognito-idp:us-west-2:*:userpool/*"
 functions:
   games:
     handler: handler.games
