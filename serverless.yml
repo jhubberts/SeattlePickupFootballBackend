@@ -41,6 +41,15 @@ functions:
           method: get
           cors: true
           authorizer: aws_iam
+  rsvp:
+    handler: handler.rsvp
+    events:
+      - http:
+          path: rsvp
+          method: put
+          cors: true
+          authorizer: aws_iam
+
 
 resources:
   - ${file(resources/api-gateway-errors.yaml)}
