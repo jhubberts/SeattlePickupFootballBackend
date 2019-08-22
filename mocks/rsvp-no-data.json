@@ -1,0 +1,9 @@
+{
+  "requestContext": {
+    "identity": {
+      "cognitoAuthenticationProvider": "cognito-idp.us-west-2.amazonaws.com/us-west-2_aeSjwUDEQ,cognito-idp.us-west-2.amazonaws.com/us-west-2_aeSjwUDEQ:CognitoSignIn:d38ccf46-0676-4ca4-9ff0-9bc1c452fb4d",
+      "cognitoIdentityId": "USER-SUB-1234"
+    }
+  }
+}
+
